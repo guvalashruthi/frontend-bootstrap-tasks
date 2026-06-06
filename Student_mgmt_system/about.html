@@ -1,0 +1,100 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - Student Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{ font-family: Arial, sans-serif; background: radial-gradient(circle at center,white,rgb(201, 201, 245)); }
+    .navbar-brand img{ height:40px; width:auto; }
+    footer{ background:#97c3ee; padding:20px 0; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            <img src="cvr.jpg" style="height: 100px; width: 100px;">
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
+                        Courses
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">BCA</a></li>
+                        <li><a class="dropdown-item" href="#">B.Tech</a></li>
+                        <li><a class="dropdown-item" href="#">MBA</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="register.html" class="nav-link">Register</a>
+                </li>
+
+            </ul>
+
+           
+
+        </div>
+    </div>
+</nav>
+
+  <main class="container py-5">
+    <h1 class="mb-3">About Us</h1>
+
+    <p>Student Management Portal is a lightweight platform built to help educational institutions manage student information, attendance, results, and profiles in a single, easy-to-use interface.</p>
+
+    <h3 class="mt-4">What we do</h3>
+    <ul>
+      <li>Centralize student records and profiles.</li>
+      <li>Track attendance and generate reports.</li>
+      <li>Publish academic results and performance summaries.</li>
+      <li>Provide simple admin tools for staff and faculty.</li>
+    </ul>
+
+    <h3 class="mt-4">Our mission</h3>
+    <p>To make academic administration more efficient by providing clear, reliable tools tailored to small and medium-sized institutions.</p>
+
+    <h3 class="mt-4">Contact</h3>
+    <p>If you'd like to learn more or request a demo, please visit our <a href="contact.html">Contact</a> page.</p>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      <small>&copy; <span id="year"></span> Student Management Portal</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+:root{--primary:#0d6efd}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
+.profile-img{width:160px;height:160px;border-radius:50%;object-fit:cover;border:6px solid #fff;box-shadow:0 6px 18px rgba(13,110,253,0.15)}
+.skill-card{background:#f8f9fa;border:1px solid #e9ecef;border-radius:6px;text-align:center}
+.timeline-item{position:relative}
+.timeline-item::before{content:'';position:absolute;left:-20px;top:16px;width:10px;height:10px;background:var(--primary);border-radius:50%}
+@media (max-width:576px){.profile-img{width:120px;height:120px}}

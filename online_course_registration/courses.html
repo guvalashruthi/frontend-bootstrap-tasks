@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Courses Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-color:#f8f9fa;
+        }
+
+        .page-title{
+            text-align:center;
+            margin:40px 0;
+            font-weight:bold;
+            color:#0d6efd;
+        }
+
+        .card{
+            transition:0.3s;
+            border:none;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card-title{
+            color:#0d6efd;
+            font-weight:bold;
+        }
+        
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 0.375rem;
+            border-top-right-radius: 0.375rem;
+        }
+
+        @media (max-width: 576px) {
+            .card-img-top {
+                height: 150px;
+            }
+        }
+        
+        /* Navbar custom styles (shared with index) */
+        .navbar-custom {
+            background: linear-gradient(90deg, rgba(10,25,47,0.95), rgba(12,36,64,0.95));
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            backdrop-filter: blur(6px);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: white !important;
+        }
+
+        .brand-logo {
+            height: 48px;
+            width: 48px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgba(255,255,255,0.92) !important;
+            margin-right: 0.5rem;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link:focus {
+            color: #ffc107 !important;
+        }
+
+        .nav-cta {
+            border-radius: 20px;
+            padding: 6px 14px;
+        }
+
+        @media (max-width: 576px) {
+            .brand-logo {
+                height: 40px;
+                width: 40px;
+            }
+
+            .navbar-brand span {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="logo.jpg" class="brand-logo" alt="LearnHub logo">
+                <span>Ayra Online Courses</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-warning ms-2 nav-cta" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Available Courses</h1>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="image5.png" class="card-img-top" alt="Web Development">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">
+                            Learn HTML, CSS, JavaScript, Bootstrap, and modern web technologies.
+                        </p>
+                        <a href="registration.html" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="image6.png" class="card-img-top" alt="Python Programming">
+                    <div class="card-body">
+                        <h5 class="card-title">Python Programming</h5>
+                        <p class="card-text">
+                            Master Python fundamentals, OOP concepts, and real-world applications.
+                        </p>
+                        <a href="registration.html" class="btn btn-success">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="image7.png" class="card-img-top" alt="Data Science">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Science</h5>
+                        <p class="card-text">
+                            Learn data analysis, visualization, statistics, and machine learning.
+                        </p>
+                        <a href="registration.html" class="btn btn-info text-white">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="image8.png" class="card-img-top" alt="AI & Machine Learning">
+                    <div class="card-body">
+                        <h5 class="card-title">AI & Machine Learning</h5>
+                        <p class="card-text">
+                            Explore artificial intelligence, neural networks, and ML algorithms.
+                        </p>
+                        <a href="registration.html" class="btn btn-warning">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="image9.png" class="card-img-top" alt="Java Programming">
+                    <div class="card-body">
+                        <h5 class="card-title">Java Programming</h5>
+                        <p class="card-text">
+                            Build strong programming skills with Java and object-oriented concepts.
+                        </p>
+                        <a href="registration.html" class="btn btn-danger">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="image11.png" class="card-img-top" alt="Cloud Computing">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Computing</h5>
+                        <p class="card-text">
+                            Learn AWS, Azure, cloud deployment, and modern infrastructure.
+                        </p>
+                        <a href="registration.html" class="btn btn-dark">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
